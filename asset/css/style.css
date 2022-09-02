@@ -176,10 +176,13 @@ body {
 .projs {
     padding: 20px;
     display: flex;
+    overflow-x: hidden;
 }
 
 .proj {
     margin: 10px;
+    width: 49%;
+    flex-shrink: 0;
 }
 
 .proj a {
@@ -190,6 +193,7 @@ body {
 .proj img {
     width: 100%;
     border-radius: 20px;
+    height: 350px;
 }
 
 .text {
