@@ -23,6 +23,7 @@
         };
     </script>
     <script src="https://kit.fontawesome.com/47139afd92.js" crossorigin="anonymous"></script>
+    <script src="/asset/js/include.js"></script>
 </head>
 
 <body class="body_dark">
@@ -51,27 +52,7 @@
     </div>
 
     <div id="root">
-        <header id="header">
-            <div class="left_index">
-                <a href="./about/index.html" class="about">
-                    <div class="index">about</div>
-                </a>
-                <a href="#" class="comptence">
-                    <div class="index">comptence</div>
-                </a>
-            </div>
-            <div class="middle_index">
-                <span id="logo">M</span>
-            </div>
-            <div class="right_index">
-                <a href="#" class="project">
-                    <div class="index">project</div>
-                </a>
-                <a href="#" class="contact">
-                    <div class="index">contact</div>
-                </a>
-            </div>
-        </header>
+        <header include="Header.html" id="header"></header>
         <main id="main">
             <div class="pre_ins">
                 <h1 class="heading">
@@ -85,7 +66,7 @@
             </div>
             <div class="aftr_ins">
                 <div class="scroller">
-                    <div class="scroller_left"  onclick="document.querySelector('.projs').scrollBy(-700, 0)">
+                    <div class="scroller_left" onclick="document.querySelector('.projs').scrollBy(-700, 0)">
                         <i class="fa-solid fa-chevron-left"></i>
                     </div>
                     <div class="scroller_right" onclick="document.querySelector('.projs').scrollBy(700, 0)">
@@ -99,7 +80,8 @@
                             <div class="text">
                                 <h3>PC Build</h3>
                                 <p class="decription">
-                                    you can build your dremms Gaming PC, And the web site can calcule the power consomation and price, After that you can export the facture
+                                    you can build your dremms Gaming PC, And the web site can calcule the power
+                                    consomation and price, After that you can export the facture
                                 </p>
                             </div>
                         </a>
@@ -110,7 +92,8 @@
                             <div class="text">
                                 <h3>E-Commerce Web-Site</h3>
                                 <p class="decription">
-                                    you can sign up to make your anounce for selling prodect, and users can see the prodect to buy it
+                                    you can sign up to make your anounce for selling prodect, and users can see the
+                                    prodect to buy it
                                 </p>
                             </div>
                         </a>
@@ -119,11 +102,9 @@
                         <a href="#">
                             <img src="./asset/img/project/proj_3.png" alt="proj_3">
                             <div class="text">
-                                <h3>Lorem ipsum dolor sit</h3>
+                                <h3>Hospital Managment</h3>
                                 <p class="decription">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit enim beatae
-                                    esse
-                                    placeat impedit amet quaerat magni
+                                    In This web site the andminista
                                 </p>
                             </div>
                         </a>
@@ -132,27 +113,11 @@
             </div>
         </main>
 
-        <footer id="footer">
-            <div class="social">
-                <a href="https://www.facebook.com/morade.raja1" class="facebook" target="_blanks">
-                    <i class="fa-brands fa-facebook"></i>
-                </a>
-                <a href="https://twitter.com/El_Mtiliss" class="twetter" target="_blanks">
-                    <i class="fa-brands fa-twitter"></i>
-                </a>
-                <a href="https://www.instagram.com/mohamad.elmitliss/" class="instagram" target="_blank">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-            </div>
-            <div class="copyright">All right reserverd to Mohamed EL MTILISS <i class="fa-regular fa-copyright"></i>
-            </div>
-            <div class="contact_us">
-                <a href="#" class="contact">Let's Talk</a>
-            </div>
-        </footer>
+        <footer id="footer" include="Footer.html"></footer>
     </div>
 
     <script src="asset/js/script.js"></script>
+    <script>includeHTML()</script>
 </body>
 
 
