@@ -76,12 +76,17 @@ body {
 }
 
 .pre_ins {
-    margin-left: 40px;
+    margin-left: 10px;
 }
 
 .Mohamed {
     animation: glitch 1s linear infinite;
     position: relative;
+}
+
+h1.heading {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 @keyframes glitch {
@@ -195,12 +200,9 @@ body {
 .proj img {
     width: 100%;
     border-radius: 20px;
-    height: 350px;
+    height: auto;
 }
 
-.text {
-    padding: 0 20px;
-}
 
 
 
@@ -454,24 +456,39 @@ body {
 #footer {
     width: inherit;
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
     background: #00000026;
     margin-top: 20px;
     border-radius: 20px 20px 0 0;
     position: relative;
     bottom: 0;
+    align-items: center;
 }
 
 #footer div {
     margin: 20px 15px;
     font-size: 14px;
     font-family: tanpearl;
+
+}
+
+.social {
+    order: 3;
 }
 
 .social a {
     color: #272424;
     text-decoration: none;
     font-size: 20px;
+}
+
+.copyright {
+    text-align: center;
+    order: 1;
+}
+
+.contact_us {
+    order: 2;
 }
 
 div.contact_us a {
