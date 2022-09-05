@@ -6,7 +6,9 @@
     <title>Mohamed EL MTILISS</title>
     <link rel="stylesheet" media="only screen and (min-width:801px) and (max-width: 1920px)" href="asset/css/style.css">
     <link rel="stylesheet" media="only screen and (min-width:320px) and (max-width: 800px)" href="asset/css/mobile.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="./asset/js/include.js"></script>
     <meta name="color-scheme" content="dark light">
     <script>
         document.onreadystatechange = function () {
@@ -24,11 +26,21 @@
         };
     </script>
     <script src="https://kit.fontawesome.com/47139afd92.js" crossorigin="anonymous"></script>
-    <script src="./asset/js/include.js"></script>
 </head>
 
 <body class="body_dark">
-    <div include="Backg_&_Loader.html"></div>
+    <div>
+        <ul class="circles">
+            <li></li><li></li><li></li><li></li><li></li>
+            <li></li><li></li><li></li><li></li><li></li>
+        </ul>
+        <div class="card">
+            <div class="loader">
+                <div class="spin"></div>
+                <div class="bounce"></div>
+            </div>
+        </div>
+    </div>
 
     <div id="root">
         <header include="Header.html" id="header"></header>
