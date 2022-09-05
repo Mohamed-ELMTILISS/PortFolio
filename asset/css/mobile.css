@@ -49,6 +49,7 @@ body {
     width: 29vw;
     display: flex;
     justify-content: center;
+    border-radius: 20px;
 }
 
 .left_index a:hover,
