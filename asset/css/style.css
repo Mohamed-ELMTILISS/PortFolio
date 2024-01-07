@@ -23,7 +23,8 @@ body {
     align-items: center;
     width: 95%;
     margin: auto;
-    height: inherit;
+    min-height: inherit;
+    justify-content: space-between;
 }
 
 @media screen and (min-width: 1500px) {
@@ -173,6 +174,7 @@ body {
     border-radius: 20px;
     display: flex;
     align-items: center;
+    position: relative;
 }
 
 .projs {
@@ -460,8 +462,6 @@ body {
     background: #00000026;
     margin-top: 20px;
     border-radius: 20px 20px 0 0;
-    position: absolute;
-    bottom: 0;
 }
 
 #footer div {
@@ -620,8 +620,8 @@ div.contact_us a:hover {
 .scroller {
     position: absolute;
     z-index: 2;
-    width: inherit;
-    display: none;
+    width: 100%;
+    display: flex;
     justify-content: space-between;
     box-sizing: border-box;
     padding: 0 10px;
@@ -640,4 +640,9 @@ div.contact_us a:hover {
     cursor: pointer;
 }
 
+.fa-solid {
+    color: white;
+}
+
 /* scroller style end*/
+

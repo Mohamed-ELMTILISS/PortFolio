@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Mohamed EL MTILISS</title>
+    <link rel="stylesheet" media="only screen and (min-width:801px) and (max-width: 1920px)" href="asset/css/style.css">
+    <link rel="stylesheet" media="only screen and (min-width:320px) and (max-width: 800px)" href="asset/css/mobile.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="./asset/js/include.js"></script>
+    <meta name="color-scheme" content="dark light">
+    <script>
+        document.onreadystatechange = function () {
+            if (document.readyState !== "complete") {
+                document.querySelector(
+                    "body").style.visibility = "hidden";
+                document.querySelector(
+                    ".card").style.visibility = "visible";
+            } else {
+                document.querySelector(
+                    ".card").style.visibility = "hidden";
+                document.querySelector(
+                    "body").style.visibility = "visible";
+            }
+        };
+    </script>
+    <script src="https://kit.fontawesome.com/47139afd92.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="body_dark">
+    <div>
+        <ul class="circles">
+            <li></li><li></li><li></li><li></li><li></li>
+            <li></li><li></li><li></li><li></li><li></li>
+        </ul>
+        <div class="card">
+            <div class="loader">
+                <div class="spin"></div>
+                <div class="bounce"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="root">
+        <header include="Header.html" id="header"></header>
+        <main id="main">
+            <div class="pre_ins">
+                <h1 class="heading">
+                    Hello,
+                    <div>I'm <span title="Mohamed" class="Mohamed">Mohamed</span>,</div>
+                </h1>
+                <h3 class="heading_2">
+                    I'm a<span class="Mohamed" title="Web Developer">Web Developer</span> Based in Maroc, And Traying To
+                    Dig My Way
+                </h3>
+            </div>
+            <div class="aftr_ins">
+                <div class="scroller">
+                    <div class="scroller_left" onclick="document.querySelector('.projs').scrollBy(-700, 0)">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </div>
+                    <div class="scroller_right" onclick="document.querySelector('.projs').scrollBy(700, 0)">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                </div>
+                <div class="projs">
+                    <div class="proj">
+                        <a href="#">
+                            <img src="./asset/img/project/proj_1.png" alt="proj_1">
+                            <div class="text">
+                                <h3>PC Build</h3>
+                                <p class="decription">
+                                    you can build your dremms Gaming PC, And the web site can calcule the power
+                                    consomation and price, After that you can export the facture
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="proj">
+                        <a href="#">
+                            <img src="./asset/img/project/proj_2.png" alt="proj_2">
+                            <div class="text">
+                                <h3>E-Commerce Web-Site</h3>
+                                <p class="decription">
+                                    you can sign up to make your anounce for selling prodect, and users can see the
+                                    prodect to buy it
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="proj">
+                        <a href="#">
+                            <img src="./asset/img/project/proj_3.png" alt="proj_3">
+                            <div class="text">
+                                <h3>Hospital Managment</h3>
+                                <p class="decription">
+                                    In This web site the administation can add Patients and flow them to the Appointment after that, the web site can make facture for the paiment
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer id="footer" include="Footer.html"></footer>
+    </div>
+
+    <script src="asset/js/script.js"></script>
+    <script>includeHTML()</script>
+</body>
+
+
+</html>
